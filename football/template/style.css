@@ -27,6 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem;
 }
 
 .brand a {
@@ -42,7 +43,7 @@ body {
 }
 
 .header-links a:hover {
-    color: salmon;
+    color: darkorange;
 }
 
 .main {
@@ -51,4 +52,9 @@ body {
 
 .footer {
     grid-area: footer;
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
