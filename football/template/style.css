@@ -26,17 +26,23 @@ body {
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .brand a {
     color: white;
     font-size: 2.5rem;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .header-links a {
     color: white;
-    
+    text-decoration: none;
+}
+
+.header-links a:hover {
+    color: salmon;
 }
 
 .main {
