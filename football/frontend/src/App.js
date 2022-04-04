@@ -13,10 +13,10 @@ function App() {
   }
 
   const closeMenu = () => {
-    document.querySelector('sidebar').classList.remove("open");
+    document.querySelector(".sidebar").classList.remove("open");
   }
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
       <div className="grid-container">
         <header className="header">
           <div className="brand">
@@ -44,8 +44,8 @@ function App() {
         </aside>
         <main className="main">
           <div className="content">
-            <Route path="/products/:id" component={ProductScreen} />
-            <Route path="/" exact={true} component={HomeScreen} />
+            {/* <Route path="/products/:id" component={ProductScreen} />
+            <Route path="/" exact={true} component={HomeScreen} /> */}
             <ul className="products">
               {
                 data.products.map(product =>
@@ -71,8 +71,7 @@ function App() {
           Tsvetomir Dimitrov © All rights reserved.
         </footer>
       </div>
-    </BrowserRouter>
+    // </BrowserRouter>
   );
 }
-
 export default App;
