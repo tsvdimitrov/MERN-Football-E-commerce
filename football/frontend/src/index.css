@@ -186,3 +186,7 @@ product-brand {
 .details-action li {
   margin-bottom: 1rem;
 }
+
+.back-to-result {
+  padding: 1rem;
+}
