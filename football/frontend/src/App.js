@@ -1,79 +1,70 @@
 import React from 'react';
-import data from './data';
-import { BrowserRouter, Link, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './App.css';
-import HomeScreen from './Screens/HomeScreen';
-import ProductScreen from './Screens/ProductScreen';
-
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
 
 function App() {
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo } = userSignin;
 
   const openMenu = () => {
-    document.querySelector(".sidebar").classList.add("open");
-  }
-
+    document.querySelector('.sidebar').classList.add('open');
+  };
   const closeMenu = () => {
-    document.querySelector(".sidebar").classList.remove("open");
-  }
+    document.querySelector('.sidebar').classList.remove('open');
+  };
   return (
     <BrowserRouter>
       <div className="grid-container">
         <header className="header">
           <div className="brand">
-            <button onClick={openMenu}>
-              &#9776;
-            </button>
-            <Link to="/" >Football-fanshop.com</Link>
+            <button onClick={openMenu}>&#9776;</button>
+            <Link to="/">amazona</Link>
           </div>
           <div className="header-links">
             <a href="cart.html">Cart</a>
-            <a href="signin.html">Sign In</a>
+            {userInfo ? (
+              <Link to="/profile">{userInfo.name}</Link>
+            ) : (
+              <Link to="/signin">Sign In</Link>
+            )}
+            {userInfo && userInfo.isAdmin && (
+              <div className="dropdown">
+                <a href="#">Admin</a>
+                <ul className="dropdown-content">
+                  <li>
+                    <Link to="/orders">Orders</Link>
+                    <Link to="/products">Products</Link>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         </header>
-        <aside className="sidebar" >
+        <aside className="sidebar">
           <h3>Shopping Categories</h3>
-          <button className="sidebar-close-button" onClick={closeMenu}>x</button>
-          <ul>
+          <button className="sidebar-close-button" onClick={closeMenu}>
+            x
+          </button>
+          <ul className="categories">
             <li>
-              <a href="index.html">Pants</a>
+              <Link to="/category/Pants">Pants</Link>
             </li>
+
             <li>
-              <a href="index.html">Shirts</a>
+              <Link to="/category/Shirts">Shirts</Link>
             </li>
           </ul>
         </aside>
         <main className="main">
           <div className="content">
-            {/* <Route path="/products/:id" component={ProductScreen} />
-            <Route path="/" exact={true} component={HomeScreen} /> */}
-            <ul className="products">
-              {
-                data.products.map(product =>
-                  <li>
-                    <div className="product">
-                      <Link to={'/product/' + product._id}>
-                        <img className="product-image"
-                          src={product.image}
-                          alt="product" />
-                      </Link>
-                      <div className="product-name">
-                        <Link to={'/product/' + product._id}>{product.name}</Link>
-                      </div>
-                      <div className="product-brand">{product.brand}</div>
-                      <div className="product-price">{product.price}</div>
-                      <div className="product-rating">{product.rating} Stars ({product.numReviews} Reviews)</div>
-                    </div>
-                  </li>)
-              }
-
-            </ul>
           </div>
         </main>
-        <footer className="footer">
-          Tsvetomir Dimitrov © All rights reserved.
-        </footer>
-      </div >
-    </BrowserRouter >
+        <footer className="footer">All right reserved.</footer>
+      </div>
+    </BrowserRouter>
   );
 }
+
 export default App;
