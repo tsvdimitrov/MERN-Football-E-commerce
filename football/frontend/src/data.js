@@ -1,4 +1,4 @@
-export default {
+const data = {
     products: [{
         _id: '1',
         name: 'Manchester United men home shirt 2021/2022',
@@ -131,3 +131,6 @@ export default {
     }
     ]
 }
+
+export default data;
+
