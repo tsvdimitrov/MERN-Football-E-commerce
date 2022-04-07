@@ -1,8 +1,12 @@
-import React from 'react';
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-function ProductScreen(props) {
-    return <div>ProductScreen</div>
+function ProductScreen() {
+    const params = useParams();
+    const { slug } = params;
+    return (
+        <div>
+            <h1>{slug}</h1>
+        </div>
+    );
 }
 export default ProductScreen;
