@@ -18,7 +18,7 @@ const data = {
             category: "Shirts",
             image: 'https://images.footballfanatics.com/liverpool/liverpool-home-stadium-shirt-2021-22_ss4_p-12056478+u-156yz4c3a3s1rt484tsv+v-bce69e00e0fd44e982d650966b9f0121.jpg?_hv=1&w=900',
             price: '79,99',
-            countInStock: 10,
+            countInStock: 0,
             brand: 'Nike',
             rating: 5,
             numReviews: 10,
