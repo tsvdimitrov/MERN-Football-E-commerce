@@ -1,13 +1,13 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import HomeScreen from './screens/HomeScreen';
-import ProductScreen from './screens/ProductScreen';
+import HomeScreen from './Screens/HomeScreen';
+import ProductScreen from './Screens/ProductScreen';
 
 function App() {
   return (
     <BrowserRouter>
       <div>
         <header>
-          <Link to="/">amazona</Link>
+          <Link to="/">Football-fans.com</Link>
         </header>
         <main>
           <Routes>

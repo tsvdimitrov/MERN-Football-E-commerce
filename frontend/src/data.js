@@ -4,7 +4,7 @@ const data = {
         name: 'Manchester United men home shirt 2021/2022',
         slug: 'adidas-slim-shirt',
         category: "Shirts",
-        image: '/images/d1.jpg',
+        image: 'https://images.footballfanatics.com/manchester-united/manchester-united-home-shirt-2021-22_ss4_p-12052601+u-at664r59yn8qgpq61tz1+v-206a8d38ca49417f845b1e6711c02106.jpg?_hv=1&w=900',
         price: '79,99',
         countInStock: 10,
         brand: 'Adidas',
