@@ -26,7 +26,7 @@ function HomeScreen() {
                                 <p>{product.name}</p>
                             </Link>
                             <p>
-                                <strong>${product.price}</strong>
+                                <strong>{product.price} лв.</strong>
                             </p>
                             <button>Add to cart</button>
                         </div>
