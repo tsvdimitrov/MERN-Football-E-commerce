@@ -1,4 +1,5 @@
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomeScreen from './Screens/HomeScreen';
 import ProductScreen from './Screens/ProductScreen';
 import Navbar from 'react-bootstrap/Navbar';
@@ -19,7 +20,7 @@ function App() {
           </Navbar>
         </header>
         <main>
-          <Container className="mt-3">
+          <Container>
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/" element={<HomeScreen />} />
@@ -35,3 +36,4 @@ function App() {
 }
 
 export default App;
+
