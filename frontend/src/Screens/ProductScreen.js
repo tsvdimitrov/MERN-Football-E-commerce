@@ -12,7 +12,7 @@ import Rating from '../components/Rating';
 import { Helmet } from 'react-helmet';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
-import { getError } from '../utils';
+import { getError } from '../util';
 import { Store } from '../Store';
 
 const reducer = (state, action) => {
