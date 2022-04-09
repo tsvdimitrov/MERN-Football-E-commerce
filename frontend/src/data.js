@@ -1,6 +1,7 @@
 const data = {
     products: [
             {
+            _id: '1',
             name: 'Manchester United men home shirt 2021/2022',
             slug: 'adidas-slim-shirt',
             category: "Shirts",
@@ -13,6 +14,7 @@ const data = {
             description: 'high quality shirt'
         },
         {
+            _id: '2',
             name: 'Liverpool men home shirt 2021/2022',
             slug: 'nike-slim-shirt',
             category: "Shirts",
@@ -26,6 +28,7 @@ const data = {
 
         },
         {
+            _id: '3',
             name: 'Arsenal men home shirt 2021/2022',
             slug: 'adidas-slim-shirt',
             category: "Shirts",
@@ -37,6 +40,7 @@ const data = {
             numReviews: 10,
             description: 'high quality shirt'
         }, {
+            _id: '4',
             name: 'Manchester City men home shirt 2021/2022',
             slug: 'puma-slim-shirt',
             category: "Shirts",
@@ -49,6 +53,7 @@ const data = {
             description: 'high quality shirt'
         },
         {
+            _id: '5',
             name: 'Tottenham men home shirt 2021/2022',
             slug: 'nike-slim-shirt',
             category: "Shirts",
@@ -61,6 +66,7 @@ const data = {
             description: 'high quality shirt'
         },
         {
+            _id: '6',
             name: 'Chelsea men home shirt 2021/2022',
             slug: 'nike-slim-shirt',
             category: "Shirts",
@@ -73,6 +79,7 @@ const data = {
             description: 'high quality shirt'
         },
         {
+            _id: '7',
             name: 'Real Madrid men home shirt 2021/2022',
             slug: 'adidas-slim-shirt',
             category: "Shirts",
@@ -85,6 +92,7 @@ const data = {
             description: 'high quality shirt'
         },
         {
+            _id: '8',
             name: 'Barcelona men home shirt 2021/2022',
             slug: 'nike-slim-shirt',
             category: "Shirts",
@@ -97,6 +105,7 @@ const data = {
             description: 'high quality shirt'
         },
         {
+            _id: '9',
             name: 'Atletico Madrid men home shirt 2021/2022',
             slug: 'nike-slim-shirt',
             category: "Shirts",
@@ -109,6 +118,7 @@ const data = {
             description: 'high quality shirt'
         },
         {
+            _id: '10',
             name: 'Valencia men home shirt 2021/2022',
             slug: 'puma-slim-shirt',
             category: "Shirts",
